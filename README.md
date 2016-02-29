@@ -4,7 +4,7 @@ programming assignments for automatic grading. If you are teaching a programming
 with hundreds of students, I imagine you don't need too much convincing that this is a good idea :-) 
 
 This is a very brief HOWTO on creating a VPL activity that uses unit tests to grade the assignment. Thanks to Juan Carlos 
-for explaining it to me on the [VPL Forum](https://moodle.org/mod/forum/post.php?reply=1323503). This example uses Java
+for explaining it to me on the [VPL Forum](https://moodle.org/mod/forum/discuss.php?d=154988). This example uses Java
 but it should be easy to adapt to other languages, testing frameworks etc.
 
 1. Create a VPL activity in the usual way. There is no need to define tests in `vpl_evaluate.cases`.
