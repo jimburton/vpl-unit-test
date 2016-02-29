@@ -1,9 +1,11 @@
 # vpl-unit-test
-[Virtual Programming Lab](http://vpl.dis.ulpgc.e) is a powerful plugin for [Moodle](https://moodle.org) that allows students to upload
+[Virtual Programming Lab](http://vpl.dis.ulpgc.es) is a powerful plugin for [Moodle](https://moodle.org) that allows students to upload
 programming assignments for automatic grading. If you are teaching a programming course
 with hundreds of students, I imagine you don't need too much convincing that this is a good idea :-) 
 
-This is a very brief HOWTO on creating a VPL activity that uses unit tests to grade the assignment.
+This is a very brief HOWTO on creating a VPL activity that uses unit tests to grade the assignment. Thanks to Juan Carlos 
+for explaining it to me on the [VPL Forum](https://moodle.org/mod/forum/post.php?reply=1323503). This example uses Java
+but it should be easy to adapt to other languages, testing frameworks etc.
 
 1. Create a VPL activity in the usual way. There is no need to define tests in `vpl_evaluate.cases`.
 2. Create a suite of unit tests that you want to use to grade the activity, e.g. `MyTest.java`. Add this file or files to the 

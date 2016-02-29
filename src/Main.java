@@ -1,8 +1,17 @@
+/**
+ * An example that demonstrates running and post-processing JUnit tests in order to grade a VPL activity.
+ */
+
 import java.util.Formatter;
 import java.util.Locale;
 
 public class Main {
 
+    /**
+     * Run some unit tests and process the results, calculating an overall grade for this activity.
+     * Print out comments for each test and the overall grade, using the format required by vpl_execution.
+     * @param args
+     */
     public static void main(String[] args) {
         MyTest t = new MyTest();
         int grade = 0;
@@ -23,6 +32,13 @@ public class Main {
         System.out.println("Grade :=>> "+grade);
     }
 
+    /**
+     * Format one or more comments for a test.
+     * @param testName
+     * @param value
+     * @param e
+     * @return
+     */
     private static String formatOutput(String testName, String value, AssertionError e) {
         StringBuilder sb = new StringBuilder();
         Formatter f = new Formatter(sb, Locale.getDefault());
